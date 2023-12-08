@@ -1,0 +1,75 @@
+body{
+  background-color: #f3dbde;
+}
+
+h1{
+
+  font-family: 'Croissant One', cursive;
+  color: #E5989B;
+  text-align: center;
+  -webkit-text-stroke-width:1px ;
+  -webkit-text-stroke-color: #B5838D;
+  text-shadow: -2px 0px 1px #B5838D;
+  font-size: 40px;
+  margin: 2px 0px 15px 0px;
+  font-weight: 300;
+}
+
+.gallery{
+  font-family: 'Croissant One';
+}
+
+.line{
+  border-top: 5px solid #E5989B;
+}
+ 
+.img-container{
+  display: flex;
+  width: 85%;
+  margin:5px 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 10px;
+ }
+
+ .img-container .imagen{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px #6D6875;
+ }
+
+ .imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+ 
+ .overlay{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background: #b5838de8;
+  width: 100%;
+  height: 0%;
+  transition: .8s;
+  overflow: hidden;
+ }
+
+ .overlay h2{
+  color: #ffcdb2e1;
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  font-family: 'Courier New';
+ }
+
+ .imagen:hover .overlay{
+  height: 100%;
+  cursor: pointer;
+ }
